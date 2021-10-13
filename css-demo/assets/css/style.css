@@ -1,0 +1,190 @@
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
+
+/*CSS Demo Stylesheet */
+
+body {
+    background-color:#BF3E0F;
+    font-family: 'Stick No Bills', sans-serif;
+    margin:0;
+    
+}
+
+header.primary{
+    background-color:#F27B13;
+    
+    text-align:center;
+    color:#fff;
+    
+    /*long form */
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:20px;
+    padding-left:40px;
+    
+    /*Short form  top right bottom left*/
+    padding:40px 40px 20px 40px;
+    
+    
+    /* top bottom together---left right together */
+    padding:20px 40px;
+   
+    text-shadow:2px 2px #000000;
+    
+    
+}
+header.primary h1{
+  font-size:2.2rem;
+   
+   
+}
+
+
+header.primary h1 a{
+  color:#ffffff;
+  text-declaration:none
+}
+
+
+
+header.primary h2{
+  font-size:1.4rem;
+  margin:20px auto 40px;  /*top-left/Right-Bottom*/
+}
+
+
+header.primary nav{
+  
+width:70vw;
+margin:20px auto;
+max-width:900px;
+}
+
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+  
+}
+
+header.primary nav a{
+  
+color:#ffffff;
+text-decoration:none;
+background-color:#000000;
+background-color:rgba(0,0,0,.4);
+padding:8px 16px;
+border-radius:20px;
+
+}
+
+header.primary nav a:hover{
+  background-color:rgba(0,0,0,.8);
+}
+
+#intro h2{
+  border-bottom:1px dotted;
+}
+#intro p{
+  line-height:1.5rem;
+}
+
+#intro{
+  border-bottom:1px dotted;
+  padding-bottom:1px;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0.4);
+  padding:10px;
+  border-radius:20px;
+  transition:.5px;
+}
+
+
+#content article.post :hover{
+    box-shadow:0 4px 8px rgba(0,0,0.8)
+  
+}
+
+
+time.post-date, figcaptiom, .post-meta{
+  text-transform:uppercase;
+}
+
+
+#content .post figure{
+  marigin:0;
+  
+}
+
+
+aside[role="complementary"]{
+  background-color:#731702;
+  padding:1px;
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/*Utility class8*/
+.container{
+  width:70vw;
+  margin:40px auto;
+  }
+
+
+/* ---------------Global Styles----------------- */
+
+
+/*media Query example */
+
+@media screen and (max-width:700px) {
+  header.primary nav ul{
+    flex-direction:column;
+    margin:auto;
+    
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  header.primary nav li{
+    margin-bottom:10px;
+  
+}
