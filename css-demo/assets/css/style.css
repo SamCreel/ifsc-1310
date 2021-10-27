@@ -1,0 +1,315 @@
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
+
+/*CSS Demo Stylesheet */
+
+body {
+    background-color:#BF3E0F;
+    font-family: 'Stick No Bills', sans-serif;
+    margin:0;
+    
+}
+
+header.primary{
+    background-color:#F27B13;
+    
+    text-align:center;
+    color:#fff;
+    
+    /*long form */
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:20px;
+    padding-left:40px;
+    
+    /*Short form  top right bottom left*/
+    padding:40px 40px 20px 40px;
+    
+    
+    /* top bottom together---left right together */
+    padding:20px 40px;
+   
+    text-shadow:2px 2px #000000;
+    
+    
+
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23cf4115' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+header.primary h1{
+  font-size:2.2rem;
+   
+   
+}
+
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none
+}
+
+
+
+header.primary h2{
+  font-size:1.4rem;
+  margin:20px auto 40px;  /*top-left/Right-Bottom*/
+}
+
+
+header.primary nav{
+  
+width:70vw;
+margin:20px auto;
+max-width:900px;
+}
+
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+  
+}
+
+header.primary nav a{
+  
+color:#ffffff;
+text-decoration:none;
+background-color:#000000;
+background-color:rgba(0,0,0,.4);
+padding:8px 16px;
+border-radius:20px;
+
+}
+
+header.primary nav a:hover{
+  background-color:rgba(0,0,0,.8);
+}
+
+#intro h2{
+  border-bottom:1px dotted;
+}
+#intro p{
+  line-height:1.5rem;
+}
+
+#intro{
+  border-bottom:1px dotted;
+  padding-bottom:1px;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0.4);
+  padding:10px;
+  border-radius:20px;
+  
+}
+
+
+#content article.post :hover{
+    box-shadow:0 4px 8px rgba(0,0,0.8)
+  
+}
+
+
+time.post-date, figcaptiom, .post-meta{
+  text-transform:uppercase;
+}
+
+
+#content .post figure{
+  margin:0;
+  
+}
+
+
+aside[role="complementary"]{
+  background-color:#731702;
+  padding:1px;
+}
+
+aside a{
+  color:#ffffff;
+  display:block;
+  }
+
+
+article.widget footer{
+  display:none;
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+#colophon{
+  background-color:#F2AB27;
+  padding:10px;
+  margin:0;
+  text-align:center;
+}
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/*Utility class8*/
+.container{
+  width:70vw;
+  margin:40px auto;
+  }
+
+.img-right{
+  float:right;
+}
+
+/* ---------------Global Styles----------------- */
+
+
+/*media Query example */
+
+@media screen and (max-width:700px) {
+  header.primary nav ul{
+    flex-direction:column;
+    margin:auto;
+    
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  header.primary nav li{
+    margin-bottom:10px;
+  
+}
+#additional-elements{
+  background-color:#F27B13;
+  margin:20px auto;
+  width:auto;
+  
+}
+#additional-elements h3{
+  border-left:10px;
+}
+
+table{
+  width:100%;
+  border:1px solid;
+  
+  
+  }
+table th{
+  color:white;
+  padding:7px;
+}  
+table tr:nth-child(even){
+
+  background-color:rgba(260,130,15,.4)
+}
+table tr:nth-child(odd){
+  background-color:rgba(240,140,15,.6)
+}
+table tr:nth-child(even) :hover{
+    box-shadow:0 4px 8px rgba(0,0,0.8)
+  }
+
+table tr:nth-child(odd) :hover{
+    background-color:rgba(242,145,17,.8)
+  }
+
+
+table th{}
+table td{
+  border:1px solid;
+  }
+
+
+table caption{}
+
+#additional-elements ol{
+  list-style-type:trad-chinese-informal;
+  list-style-position:inside;
+  
+}
+
+#additional-elements ul ul{
+  list-style-type:trad-chinese-informal;
+  
+  
+} /*used ul ul to fig deeper into the list. Went after the sublist*/
+
+#additional-elements dl{
+  
+}
+
+
+#additional-elements dt{
+  font-weight:bold;
+}
+
+
+
+#additional-elements dd{
+  margin-left:0;
+  
+}
+
+#additional-elements dd:hover{
+  background-color:rgba(241,146,16,.9);
+}
+
+dd+dt{
+  margin-top:1.5rem;
+} /*adjacent sibling combinator*/
+
+
+#additional-elements blockquote{
+  background-color:rgba(241,146,16,.9);
+  
+}
+  
+
+#additional-elements h3 {
+  border-bottom:1px dotted;
+}
+
+#additional-elements p{
+  padding:8px 16px;
+border-radius:20px;
+background-color:rgba(241,146,16,.9);
+  
+}
+
+#additional-elements cite{
+  display:block;
+  font-size:.6rem;
+  font-weight:bold;
+  text-align:right;
+}
